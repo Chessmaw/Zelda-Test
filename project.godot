@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Test Zelda"
+run/main_scene="res://World/KinematicBody2D.tscn"
 config/icon="res://icon.png"
 
 [gui]
