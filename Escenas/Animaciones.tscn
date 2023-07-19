@@ -1,0 +1,108 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://Texturas/Link/35.png" type="Texture" id=1]
+[ext_resource path="res://Texturas/Link/50.png" type="Texture" id=2]
+[ext_resource path="res://Texturas/Link/34.png" type="Texture" id=3]
+[ext_resource path="res://Texturas/Link/53.png" type="Texture" id=4]
+[ext_resource path="res://Texturas/Link/32.png" type="Texture" id=5]
+[ext_resource path="res://Texturas/Link/37.png" type="Texture" id=6]
+[ext_resource path="res://Texturas/Link/51.png" type="Texture" id=7]
+[ext_resource path="res://Texturas/Link/29.png" type="Texture" id=8]
+[ext_resource path="res://Texturas/Link/39.png" type="Texture" id=9]
+[ext_resource path="res://Texturas/Link/52.png" type="Texture" id=10]
+[ext_resource path="res://Texturas/Link/31.png" type="Texture" id=11]
+[ext_resource path="res://Texturas/Link/33.png" type="Texture" id=12]
+[ext_resource path="res://Texturas/Link/40.png" type="Texture" id=13]
+[ext_resource path="res://Texturas/Link/30.png" type="Texture" id=14]
+[ext_resource path="res://Texturas/Link/49.png" type="Texture" id=15]
+[ext_resource path="res://Texturas/Link/36.png" type="Texture" id=16]
+[ext_resource path="res://Texturas/Link/38.png" type="Texture" id=17]
+[ext_resource path="res://Texturas/Link/43.png" type="Texture" id=18]
+[ext_resource path="res://Texturas/Link/46.png" type="Texture" id=19]
+[ext_resource path="res://Texturas/Link/41.png" type="Texture" id=20]
+[ext_resource path="res://Texturas/Link/44.png" type="Texture" id=21]
+[ext_resource path="res://Texturas/Link/42.png" type="Texture" id=22]
+[ext_resource path="res://Texturas/Link/54.png" type="Texture" id=23]
+[ext_resource path="res://Texturas/Link/45.png" type="Texture" id=24]
+[ext_resource path="res://Texturas/Link/47.png" type="Texture" id=25]
+[ext_resource path="res://Texturas/Link/12.png" type="Texture" id=26]
+[ext_resource path="res://Texturas/Link/26.png" type="Texture" id=27]
+[ext_resource path="res://Texturas/Link/21.png" type="Texture" id=28]
+[ext_resource path="res://Texturas/Link/27.png" type="Texture" id=29]
+[ext_resource path="res://Texturas/Link/22.png" type="Texture" id=30]
+[ext_resource path="res://Texturas/Link/28.png" type="Texture" id=31]
+[ext_resource path="res://Texturas/Link/17.png" type="Texture" id=32]
+[ext_resource path="res://Texturas/Link/18.png" type="Texture" id=33]
+[ext_resource path="res://Texturas/Link/13.png" type="Texture" id=34]
+[ext_resource path="res://Texturas/Link/19.png" type="Texture" id=35]
+[ext_resource path="res://Texturas/Link/20.png" type="Texture" id=36]
+[ext_resource path="res://Texturas/Link/16.png" type="Texture" id=37]
+[ext_resource path="res://Texturas/Link/25.png" type="Texture" id=38]
+[ext_resource path="res://Texturas/Link/23.png" type="Texture" id=39]
+[ext_resource path="res://Texturas/Link/24.png" type="Texture" id=40]
+[ext_resource path="res://Texturas/Link/14.png" type="Texture" id=41]
+[ext_resource path="res://Texturas/Link/15.png" type="Texture" id=42]
+[ext_resource path="res://Texturas/Link/1.png" type="Texture" id=43]
+[ext_resource path="res://Texturas/Link/3.png" type="Texture" id=44]
+[ext_resource path="res://Texturas/Link/0.png" type="Texture" id=45]
+[ext_resource path="res://Texturas/Link/2.png" type="Texture" id=46]
+[ext_resource path="res://Texturas/Link/56.png" type="Texture" id=47]
+[ext_resource path="res://Texturas/Link/4.png" type="Texture" id=48]
+[ext_resource path="res://Texturas/Link/5.png" type="Texture" id=49]
+[ext_resource path="res://Texturas/Link/55.png" type="Texture" id=50]
+[ext_resource path="res://Texturas/Link/57.png" type="Texture" id=51]
+[ext_resource path="res://Texturas/Link/8.png" type="Texture" id=52]
+[ext_resource path="res://Texturas/Link/9.png" type="Texture" id=53]
+[ext_resource path="res://Texturas/Link/10.png" type="Texture" id=54]
+[ext_resource path="res://Texturas/Link/11.png" type="Texture" id=55]
+[ext_resource path="res://Texturas/Link/6.png" type="Texture" id=56]
+[ext_resource path="res://Texturas/Link/7.png" type="Texture" id=57]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 45 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 16 ), ExtResource( 6 ), ExtResource( 17 ), ExtResource( 9 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "Attack_Down",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 19 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "Attack_Side",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 4 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "Attack_Up",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 50 ), ExtResource( 47 ), ExtResource( 51 ), ExtResource( 47 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "Idle_Down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 43 ), ExtResource( 46 ), ExtResource( 44 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "Walk_Down",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 38 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Walk_Side",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 26 ), ExtResource( 34 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "Walk_Up",
+"speed": 15.0
+} ]
+
+[node name="Animaciones" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 336, 247 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 1 )
+animation = "Walk_Up"
+frame = 2
+playing = true
+offset = Vector2( 1, 1 )
