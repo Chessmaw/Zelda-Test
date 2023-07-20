@@ -12,7 +12,8 @@ config_version=4
 
 config/name="Test Zelda"
 run/main_scene="res://Escenas/MainMenu.tscn"
-config/icon="res://icon.png"
+config/icon="res://Texturas/Link/0.png"
+config/windows_native_icon="res://Texturas/Link/0.png"
 
 [display]
 

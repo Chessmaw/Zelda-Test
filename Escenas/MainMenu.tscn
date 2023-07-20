@@ -1076,14 +1076,14 @@ volume_db = 3.025
 position = Vector2( 212, 400 )
 scale = Vector2( 1.95349, 2.26415 )
 frames = SubResource( 205 )
-frame = 60
+frame = 175
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
-position = Vector2( 810, 404 )
+position = Vector2( 810, 393 )
 scale = Vector2( 1.95349, 2.26415 )
 frames = SubResource( 205 )
-frame = 60
+frame = 175
 playing = true
 
 [connection signal="button_down" from="Button" to="Button" method="_on_Button_button_down"]
