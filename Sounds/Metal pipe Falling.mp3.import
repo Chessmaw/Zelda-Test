@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Metal pipe Falling.mp3-0000aba11490ea567ab00921c60cbc5a.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Metal pipe Falling.mp3"
+dest_files=[ "res://.import/Metal pipe Falling.mp3-0000aba11490ea567ab00921c60cbc5a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

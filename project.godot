@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Test Zelda"
-run/main_scene="res://Escenas/casa.tscn"
+run/main_scene="res://Escenas/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [display]

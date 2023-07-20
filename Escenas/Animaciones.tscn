@@ -103,6 +103,5 @@ position = Vector2( 336, 247 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 1 )
 animation = "Walk_Up"
-frame = 2
-playing = true
+frame = 3
 offset = Vector2( 1, 1 )
