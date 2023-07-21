@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Texturas/Background/SkyNight.jpg" type="Texture" id=1]
 [ext_resource path="res://Escenarios/Pasto y demas/CliffTileset.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Escenarios/Pasto y demas/DirtTileset.png" type="Texture" id=6]
 [ext_resource path="res://Escenarios/Pasto y demas/Grass.png" type="Texture" id=7]
 [ext_resource path="res://Escenas/Puerta.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sounds/Musica de afuera.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Escenas/levels.gd" type="Script" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 45.4438, 9.78765 )
@@ -19,16 +21,20 @@ extents = Vector2( 45.1118, 13.5907 )
 extents = Vector2( 4.73668, 31.9305 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 28.3878, 10 )
+extents = Vector2( 31.2381, 10 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 23.42, 10 )
+extents = Vector2( 26.9409, 10 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 10, 41.2933 )
 
 [sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 3.60475, 13.3397 )
+
+[sub_resource type="SegmentShape2D" id=22]
+a = Vector2( 27.1614, 9.88414 )
+b = Vector2( -2.34727, 9.57526 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 32, 32, 32 )
@@ -357,6 +363,7 @@ points = PoolVector2Array( 0, 32, 32, 32, 32, 32, 0, 32 )
 0/z_index = 0
 
 [node name="casa" type="Node2D"]
+script = ExtResource( 10 )
 
 [node name="SkyNight" type="Sprite" parent="."]
 show_behind_parent = true
@@ -374,12 +381,10 @@ position = Vector2( 0.436417, 0.926666 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( -63.4698, 76.602 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( 61.1063, 70.4245 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
@@ -388,39 +393,38 @@ scale = Vector2( 1, 0.999999 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
-position = Vector2( 44.0471, -18.2239 )
+position = Vector2( 41.1968, -18.2239 )
 scale = Vector2( 1, 0.999999 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( -78.8917, -5.55986 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
-position = Vector2( -38.2753, -20.0772 )
+position = Vector2( -34.7544, -20.0772 )
 scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( 81.3693, -33.0501 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( 96.4461, 13.803 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( -21.3103, 53.8029 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 15 )
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
 position = Vector2( 19.3478, 54.3627 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 15 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="SkyNight/0/StaticBody2D"]
+position = Vector2( -12.1728, -30.888 )
+shape = SubResource( 22 )
 
 [node name="TileMap" type="TileMap" parent="SkyNight"]
 tile_set = SubResource( 8 )
@@ -441,9 +445,16 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 720889, 0, 0, 720890, 0, 0, 786425, 0, 0, 786426, 0, 0 )
 
-[node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 544, 327 )
-
 [node name="Puerta" parent="." instance=ExtResource( 8 )]
-position = Vector2( 544, 267 )
+position = Vector2( 544, 255 )
 escena = "Adentro"
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 494, 395 )
+
+[node name="Musica de afuera" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
+
+[node name="Adentropos" type="Position2D" parent="."]
+position = Vector2( 546, 331 )

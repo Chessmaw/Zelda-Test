@@ -12,8 +12,14 @@ config_version=4
 
 config/name="Test Zelda"
 run/main_scene="res://Escenas/MainMenu.tscn"
+boot_splash/image="res://fONDO DE inicio.PNG"
 config/icon="res://Texturas/Link/0.png"
 config/windows_native_icon="res://Texturas/Link/0.png"
+
+[autoload]
+
+Global="*res://Escenas/Global.tscn"
+SceneTransition="*res://Escenas/scene_transition.tscn"
 
 [display]
 
