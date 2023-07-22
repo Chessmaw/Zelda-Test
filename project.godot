@@ -20,6 +20,7 @@ config/windows_native_icon="res://Texturas/Link/0.png"
 
 Global="*res://Escenas/Global.tscn"
 SceneTransition="*res://Escenas/scene_transition.tscn"
+Musicadelacasa="*res://Escenas/musicadelacasa.tscn"
 
 [display]
 

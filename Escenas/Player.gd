@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (float) var speed = 350
+export (float) var speed = 300
 
 var motion = Vector2.ZERO
 
@@ -32,3 +32,8 @@ func _physics_process (delta):
 		motion.x = 0
 		motion.y = 0
 	move_and_slide(motion)
+	
+	motion = Vector2(motion.x, motion.y)* speed
+
+
+	

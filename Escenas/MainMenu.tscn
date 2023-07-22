@@ -1,11 +1,13 @@
-[gd_scene load_steps=212 format=2]
+[gd_scene load_steps=215 format=2]
 
 [ext_resource path="res://Fuentes/Qdbettercomicsans-jEEeG.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Fuentes/MinecraftRegular-Bmg3.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://Sounds/Ganon rosario.mp3" type="AudioStream" id=3]
-[ext_resource path="res://play.gd" type="Script" id=4]
+[ext_resource path="res://Escenas/play.gd" type="Script" id=4]
 [ext_resource path="res://Sounds/Metal pipe Falling.mp3" type="AudioStream" id=5]
 [ext_resource path="res://Texturas/Background/ezgif.com-gif-maker.png" type="Texture" id=6]
+[ext_resource path="res://Escenas/agua.jpeg" type="Texture" id=7]
+[ext_resource path="res://Escenas/Fondo playa.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -16,6 +18,11 @@ size = 42
 outline_size = 4
 outline_color = Color( 0.827451, 0.768627, 0.0941176, 1 )
 font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=206]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 320, 180 )
+modulate_color = Color( 0.988235, 0.988235, 0.988235, 1 )
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
@@ -1037,24 +1044,24 @@ animations = [ {
 
 [node name="MainMenu" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 599.0
-color = Color( 0.121569, 0.878431, 0.521569, 1 )
+[node name="ColorRect" type="Sprite" parent="."]
+position = Vector2( 513, 298 )
+scale = Vector2( 0.432773, 0.5375 )
+texture = ExtResource( 8 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
-margin_left = 120.0
+margin_left = 104.0
 margin_top = 74.0
-margin_right = 506.0
+margin_right = 503.0
 margin_bottom = 155.0
 rect_scale = Vector2( 2, 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Juego insano la ptm aaaaaaaaa
+text = "    Juego insano  aaaaaaaaa
 
    *Insertar texto jajajaja*"
 uppercase = true
@@ -1065,6 +1072,7 @@ margin_top = 294.0
 margin_right = 565.0
 margin_bottom = 390.0
 custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 206 )
 text = "Play"
 script = ExtResource( 4 )
 
@@ -1076,14 +1084,14 @@ volume_db = 3.025
 position = Vector2( 212, 400 )
 scale = Vector2( 1.95349, 2.26415 )
 frames = SubResource( 205 )
-frame = 38
+frame = 192
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 810, 393 )
 scale = Vector2( 1.95349, 2.26415 )
 frames = SubResource( 205 )
-frame = 38
+frame = 192
 playing = true
 
 [connection signal="button_down" from="Button" to="Button" method="_on_Button_button_down"]

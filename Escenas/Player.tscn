@@ -27,5 +27,4 @@ show_behind_parent = true
 position = Vector2( -0.333328, -7 )
 frames = ExtResource( 1 )
 animation = "Walk_Side"
-frame = 9
-playing = true
+frame = 7
