@@ -8,6 +8,40 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "AnimatedSprite",
+"class": "LPCSprite",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite.gd"
+}, {
+"base": "SpriteFrames",
+"class": "LPCSpriteBlueprint",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite_blueprint.gd"
+}, {
+"base": "Resource",
+"class": "LPCSpriteBlueprintLayer",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/internal/lpc_sprite_blueprint_layer.gd"
+}, {
+"base": "Sprite",
+"class": "LPCSpriteLayer",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite_layer.gd"
+}, {
+"base": "LPCSpriteLayer",
+"class": "LPCSpriteLayerOversize",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite_layer_oversize.gd"
+} ]
+_global_script_class_icons={
+"LPCSprite": "res://addons/lpc_spritesheet_gen/internal/lpc_icon.png",
+"LPCSpriteBlueprint": "res://addons/lpc_spritesheet_gen/internal/lpc_icon_spec.png",
+"LPCSpriteBlueprintLayer": "",
+"LPCSpriteLayer": "",
+"LPCSpriteLayerOversize": ""
+}
+
 [application]
 
 config/name="Test Zelda"
