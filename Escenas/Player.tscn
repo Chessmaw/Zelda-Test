@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Escenas/Animaciones.tres" type="SpriteFrames" id=1]
-[ext_resource path="res://Escenas/PauseMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Escenas/Player.gd" type="Script" id=3]
 [ext_resource path="res://Escenas/Camara2D.gd" type="Script" id=4]
 
@@ -13,13 +12,6 @@ height = 4.33333
 position = Vector2( 348, 370 )
 scale = Vector2( 3, 3 )
 script = ExtResource( 3 )
-
-[node name="PauseMenu" parent="." instance=ExtResource( 2 )]
-pause_mode = 2
-margin_left = -175.0
-margin_top = -110.0
-margin_right = 172.0
-margin_bottom = 95.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.666664, -4 )
